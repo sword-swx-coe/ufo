@@ -1,0 +1,4 @@
+background:
+  state variables: [u, v]
+  filename: nc_files/all_stations-20140102.nc
+  date: 2023-01-08T00:00:00Z

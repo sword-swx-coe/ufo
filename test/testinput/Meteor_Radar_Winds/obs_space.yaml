@@ -1,0 +1,23 @@
+observations:
+  observers:
+    - obs space:
+        name: MeteorRadar
+        obsdatain:
+          engine:
+            type: H5File
+            obsfile: meteor_radar.nc
+
+        observed variables:
+          - eastward_wind
+          - northward_wind
+
+      obs operator:
+        name: Meteor_Radar_Winds
+
+      obs error:
+        covariance model: diagonal
+  obsdatain:
+      engine:
+        type: H5File
+        obsfile: obs_ioda.nc
+  simulated variables: [windSpeed, windSpeed]

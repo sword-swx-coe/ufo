@@ -339,6 +339,15 @@ ecbuild_add_test( TARGET  test_ufo_recordhandler
                   DEPENDS test_RecordHandler.x
                   TEST_DEPENDS ufo_get_ufo_test_data )
 
+
+
+ecbuild_add_test(
+  TARGET   testinput/Meteor_Radar_winds/Outputs.yaml
+  SOURCES  testinput/Meteor_Radar_winds/obs_space.yaml
+  ARGS     testinput/Meteor_Radar_winds/obs_space.yaml
+  MPI      1
+)
+
 #####################################################################
 # Files for CRTM tests
 #####################################################################

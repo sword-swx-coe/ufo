@@ -1,0 +1,3 @@
+test:
+  reference filename: nc_files/all_stations-20140102.nc
+  float relative tolerance: 1.0e-6
