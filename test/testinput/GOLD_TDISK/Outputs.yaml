@@ -1,0 +1,3 @@
+test:
+  reference filename: OuputFiles/Meteor_Winds_riogrande_2023-01-08 00:00:00.nc
+  float relative tolerance: 1.0e-6

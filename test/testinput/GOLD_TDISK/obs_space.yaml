@@ -1,0 +1,22 @@
+observations:
+  observers:
+    - obs space:
+        name: GOLD_TDISK
+        obsdatain:
+          engine:
+            type: H5File
+            obsfile: GOLD_TDISK__[20181104].nc
+
+        observed variables:
+          - Temperature
+
+      obs operator:
+        name: GOLD_TDISK
+
+      obs error:
+        covariance model: diagonal
+  obsdatain:
+      engine:
+        type: H5File
+        obsfile: obs_ioda.nc
+  simulated variables: [Temperature]
